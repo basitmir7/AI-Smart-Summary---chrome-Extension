@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Smart Summary",
+    "version": "1.0",
+    "description": "Summarize articles and web pages using AI.",
+    "permissions": ["scripting", "activeTab", "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": ""
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "128": ""
+    }
+  }
+  
