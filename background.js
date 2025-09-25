@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener(async (message, sender, sendResponse) => {
 });
 
  async function getSummary(text) {
-  const apiKey = "YOUR API KEY; // ⚠️ replace with your Gemini key from Google AI Studio
+  const apiKey = "YOUR API KEY;" // ⚠️ replace with your Gemini key from Google AI Studio
 
   const modelName = "models/gemini-1.5-flash";  // Replace with one you find
   try {
