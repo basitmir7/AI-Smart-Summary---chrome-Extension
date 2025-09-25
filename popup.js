@@ -10,7 +10,7 @@ document.getElementById("summarizeBtn").addEventListener("click", async () => {
     });
   
     // Show loading text
-    document.getElementById("summary").innerText = "Summarizing... ⏳";
+    document.getElementById("summary").innerText = "Summarizing...";
   });
   
   // Listen for messages from background.js
